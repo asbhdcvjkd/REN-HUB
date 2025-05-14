@@ -1,0 +1,450 @@
+-- Gui to Lua
+-- Version: 3.2
+
+-- Instances:
+
+local RENhub = Instance.new("ScreenGui")
+local Neohubgui = Instance.new("Frame")
+local UICorner = Instance.new("UICorner")
+local TextLabel = Instance.new("TextLabel")
+local Scanner = Instance.new("TextButton")
+local UICorner_2 = Instance.new("UICorner")
+local Readytohub = Instance.new("Frame")
+local UICorner_3 = Instance.new("UICorner")
+local TextLabel_2 = Instance.new("TextLabel")
+local Execute = Instance.new("TextButton")
+local TextBox = Instance.new("TextBox")
+local Clear = Instance.new("TextButton")
+local ImageLabel = Instance.new("ImageLabel")
+local ImageLabel_2 = Instance.new("ImageLabel")
+local R6 = Instance.new("TextButton")
+local RE = Instance.new("TextButton")
+
+--Properties:
+
+RENhub.Name = "REN hub"
+RENhub.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+RENhub.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+RENhub.ResetOnSpawn = false
+
+Neohubgui.Name = "Neo hub gui"
+Neohubgui.Parent = RENhub
+Neohubgui.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+Neohubgui.BackgroundTransparency = 0.600
+Neohubgui.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Neohubgui.BorderSizePixel = 0
+Neohubgui.Position = UDim2.new(0.328030348, 0, 0.322927862, 0)
+Neohubgui.Size = UDim2.new(0, 545, 0, 306)
+
+UICorner.Parent = Neohubgui
+
+TextLabel.Parent = Neohubgui
+TextLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel.BackgroundTransparency = 1.000
+TextLabel.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel.BorderSizePixel = 0
+TextLabel.Position = UDim2.new(0.229357794, 0, 0, 0)
+TextLabel.Size = UDim2.new(0, 295, 0, 60)
+TextLabel.Font = Enum.Font.Cartoon
+TextLabel.Text = "REN hub"
+TextLabel.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel.TextScaled = true
+TextLabel.TextSize = 100.000
+TextLabel.TextWrapped = true
+
+Scanner.Name = "Scanner"
+Scanner.Parent = Neohubgui
+Scanner.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+Scanner.BackgroundTransparency = 0.500
+Scanner.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Scanner.BorderSizePixel = 0
+Scanner.Position = UDim2.new(0.262385309, 0, 0.388888896, 0)
+Scanner.Size = UDim2.new(0, 259, 0, 69)
+Scanner.Font = Enum.Font.SourceSans
+Scanner.Text = "Start Scanner"
+Scanner.TextColor3 = Color3.fromRGB(0, 0, 0)
+Scanner.TextScaled = true
+Scanner.TextSize = 14.000
+Scanner.TextWrapped = true
+
+UICorner_2.Parent = Scanner
+
+Readytohub.Name = "Ready to hub"
+Readytohub.Parent = RENhub
+Readytohub.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+Readytohub.BackgroundTransparency = 0.600
+Readytohub.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Readytohub.BorderSizePixel = 0
+Readytohub.Position = UDim2.new(0.327993363, 0, 0.322710723, 0)
+Readytohub.Size = UDim2.new(0, 545, 0, 306)
+Readytohub.Visible = false
+
+UICorner_3.Parent = Readytohub
+
+TextLabel_2.Parent = Readytohub
+TextLabel_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_2.BackgroundTransparency = 1.000
+TextLabel_2.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_2.BorderSizePixel = 0
+TextLabel_2.Position = UDim2.new(0.227522939, 0, 0, 0)
+TextLabel_2.Size = UDim2.new(0, 295, 0, 60)
+TextLabel_2.Font = Enum.Font.Cartoon
+TextLabel_2.Text = "REN hub"
+TextLabel_2.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_2.TextScaled = true
+TextLabel_2.TextSize = 100.000
+TextLabel_2.TextWrapped = true
+
+Execute.Name = "Execute"
+Execute.Parent = Readytohub
+Execute.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+Execute.BackgroundTransparency = 1.000
+Execute.BorderColor3 = Color3.fromRGB(255, 0, 4)
+Execute.BorderSizePixel = 3
+Execute.Position = UDim2.new(0.0227109008, 0, 0.804986417, 0)
+Execute.Size = UDim2.new(0.352060407, 0, 0.153636083, 0)
+Execute.Font = Enum.Font.Cartoon
+Execute.Text = "Execute"
+Execute.TextColor3 = Color3.fromRGB(0, 0, 0)
+Execute.TextScaled = true
+Execute.TextSize = 14.000
+Execute.TextWrapped = true
+
+TextBox.Parent = Readytohub
+TextBox.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+TextBox.BackgroundTransparency = 0.500
+TextBox.BorderColor3 = Color3.fromRGB(55, 255, 0)
+TextBox.BorderSizePixel = 3
+TextBox.Position = UDim2.new(0.0227110144, 0, 0.194457561, 0)
+TextBox.Size = UDim2.new(0.954350173, 0, 0.55094552, 0)
+TextBox.Font = Enum.Font.Arial
+TextBox.PlaceholderText = "your require here"
+TextBox.Text = ""
+TextBox.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextBox.TextSize = 14.000
+TextBox.TextWrapped = true
+TextBox.TextXAlignment = Enum.TextXAlignment.Left
+TextBox.TextYAlignment = Enum.TextYAlignment.Top
+
+Clear.Name = "Clear"
+Clear.Parent = Readytohub
+Clear.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+Clear.BackgroundTransparency = 1.000
+Clear.BorderColor3 = Color3.fromRGB(255, 0, 4)
+Clear.BorderSizePixel = 3
+Clear.Position = UDim2.new(0.414678901, 0, 0.804986417, 0)
+Clear.Size = UDim2.new(0.234862372, 0, 0.153636083, 0)
+Clear.Font = Enum.Font.Cartoon
+Clear.Text = "Clear"
+Clear.TextColor3 = Color3.fromRGB(0, 0, 0)
+Clear.TextScaled = true
+Clear.TextSize = 14.000
+Clear.TextWrapped = true
+
+ImageLabel.Parent = Readytohub
+ImageLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ImageLabel.BackgroundTransparency = 1.000
+ImageLabel.BorderColor3 = Color3.fromRGB(0, 0, 0)
+ImageLabel.BorderSizePixel = 0
+ImageLabel.Position = UDim2.new(0.611009181, 0, 0.804986298, 0)
+ImageLabel.Size = UDim2.new(0, 58, 0, 45)
+ImageLabel.Image = "rbxassetid://145360650"
+
+ImageLabel_2.Parent = Readytohub
+ImageLabel_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ImageLabel_2.BackgroundTransparency = 1.000
+ImageLabel_2.BorderColor3 = Color3.fromRGB(0, 0, 0)
+ImageLabel_2.BorderSizePixel = 0
+ImageLabel_2.Position = UDim2.new(0.308256894, 0, 0.811522245, 0)
+ImageLabel_2.Size = UDim2.new(0, 58, 0, 45)
+ImageLabel_2.Image = "rbxassetid://84159029790324"
+
+R6.Name = "R6"
+R6.Parent = Readytohub
+R6.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+R6.BackgroundTransparency = 1.000
+R6.BorderColor3 = Color3.fromRGB(255, 0, 4)
+R6.BorderSizePixel = 3
+R6.Position = UDim2.new(0.779816508, 0, 0.765770912, 0)
+R6.Size = UDim2.new(0.159633026, 0, 0.0948125795, 0)
+R6.Font = Enum.Font.Cartoon
+R6.Text = "R6"
+R6.TextColor3 = Color3.fromRGB(0, 0, 0)
+R6.TextScaled = true
+R6.TextSize = 14.000
+R6.TextWrapped = true
+
+RE.Name = "RE"
+RE.Parent = Readytohub
+RE.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+RE.BackgroundTransparency = 1.000
+RE.BorderColor3 = Color3.fromRGB(255, 0, 4)
+RE.BorderSizePixel = 3
+RE.Position = UDim2.new(0.779816508, 0, 0.883418083, 0)
+RE.Size = UDim2.new(0.159633026, 0, 0.0948125795, 0)
+RE.Font = Enum.Font.Cartoon
+RE.Text = "RE"
+RE.TextColor3 = Color3.fromRGB(0, 0, 0)
+RE.TextScaled = true
+RE.TextSize = 14.000
+RE.TextWrapped = true
+
+-- Scripts:
+
+local function MYFE_fake_script() -- Scanner.ScannerClickHandler 
+	local script = Instance.new('LocalScript', Scanner)
+
+	local ReplicatedStorage = game:GetService("ReplicatedStorage")
+	local StarterGui = game:GetService("StarterGui")
+	
+	local scannerButton = script.Parent
+	local screenGui = scannerButton:FindFirstAncestorOfClass("ScreenGui")
+	
+	if not screenGui then
+		warn("REN Backdoor: Parent ScreenGui not found for button:", scannerButton:GetFullName())
+	    return
+	end
+	
+	local scanInterval = 0.5 -- Time in seconds between logging each service scan
+	
+	scannerButton.MouseButton1Click:Connect(function()
+	    scannerButton.Text = "Searching..." -- Update button text at the start of the scan
+		print("REN Backdoor: Initiating scan...")
+	    local startTime = os.clock()
+	
+		print("REN Backdoor: Searching for Backdoor in ReplicatedStorage...")
+	    local backdoorEvent = ReplicatedStorage:FindFirstChild("Backdoor")--name of the backdoor
+	    local timeTakenForInitialSearch = os.clock() - startTime
+	
+	    if backdoorEvent then
+	        local totalTimeTaken = os.clock() - startTime -- Total time until found
+	
+	        print("Backdoor found in ReplicatedStorage in " .. string.format("%.4f", timeTakenForInitialSearch) .. " seconds.")
+	        
+	        StarterGui:SetCore("SendNotification", {
+	            Title = "REN hub Backdoor",
+	            Text = "Found Backdoor in " .. string.format("%.4f", totalTimeTaken) .. " seconds.",
+	            Duration = 5 -- Duration in seconds
+	        })
+	
+	        local neoHubGui = screenGui:FindFirstChild("Neo hub gui")
+	        if neoHubGui and neoHubGui:IsA("Frame") then
+	            neoHubGui.Visible = false
+	        else
+				warn("REN Backdoor: 'Neo hub gui' Frame not found or not a Frame in", screenGui:GetFullName())
+	        end
+	
+	        local readyToHubGui = screenGui:FindFirstChild("Ready to hub")
+	        if readyToHubGui and readyToHubGui:IsA("Frame") then
+	            readyToHubGui.Visible = true
+	            if neoHubGui and neoHubGui:IsA("Frame") then -- Ensure neoHubGui is also valid before accessing its position
+	                readyToHubGui.Position = neoHubGui.Position
+	            end
+	        else
+				warn("REN Backdoor: 'Ready to hub' Frame not found or not a Frame in", screenGui:GetFullName(), ". Please ensure it exists.")
+	        end
+	        -- If backdoor is found, the button text might be updated here if needed.
+	        -- For now, it might stay "Searching..." or be handled by UI flow.
+	        -- If backdoor is found, we can set text to "Backdoor Found!" or similar.
+	        -- scannerButton.Text = "Backdoor Found!" 
+	    else
+			print("REN Backdoor: 'REN Backdoor' not found in ReplicatedStorage after " .. string.format("%.4f", timeTakenForInitialSearch) .. " seconds.")
+	        print("REN Backdoor: Initiating extended scan...")
+	
+	        local servicesToScan = {
+	            "Workspace", 
+				"Lighting", 
+	            "ReplicatedStorage", 
+				"ServerScriptService", 
+				"ServerStorage", 
+	            "StarterGui", 
+	            "StarterPlayer",
+	            "SoundService",
+	            "Chat",
+	            "Players",
+	            "Teams"
+	        }
+	        
+	        local skipDelay = false -- Flag to control if the delay should be skipped
+	
+	        for _, serviceName in servicesToScan do
+				print("REN Backdoor: Searching for Backdoor in " .. serviceName .. "...")
+	            
+	            if not skipDelay then
+	                task.wait(scanInterval) -- Wait for the configured interval
+	                if serviceName == "ReplicatedStorage" then
+	                    skipDelay = true -- After ReplicatedStorage is scanned (and waited for), skip delays for subsequent services
+	                end
+	            end
+	            -- We don't actually search here, just log the attempt for simulation
+	        end
+	        
+	        local totalTimeTaken = os.clock() - startTime -- Total time from the very start
+	
+			print("REN Backdoor: scan complete. 'REN Backdoor' still not found. Total scan time: " .. string.format("%.4f", totalTimeTaken) .. " seconds.")
+	        
+	        StarterGui:SetCore("SendNotification", {
+	            Title = "REN hub Backdoor",
+	            Text = "'REN Backdoor' not found after searching multiple services. Time: " .. string.format("%.4f", totalTimeTaken) .. "s.",
+	            Duration = 7 -- Longer duration for this notification
+	        })
+	        scannerButton.Text = "No Backdoor :("
+	    end
+	end)
+	
+	
+end
+coroutine.wrap(MYFE_fake_script)()
+local function XXZLT_fake_script() -- Neohubgui.UIDrag 
+	local script = Instance.new('LocalScript', Neohubgui)
+
+	-- Made by Real_IceyDev (@lceyDex) --
+	-- Simple UI dragger (PC Only/Any device that has a mouse) --
+	
+	local UIS = game:GetService('UserInputService')
+	local frame = script.Parent
+	local dragToggle = nil
+	local dragSpeed = 0.25
+	local dragStart = nil
+	local startPos = nil
+	
+	local function updateInput(input)
+		local delta = input.Position - dragStart
+		local position = UDim2.new(startPos.X.Scale, startPos.X.Offset + delta.X,
+			startPos.Y.Scale, startPos.Y.Offset + delta.Y)
+		game:GetService('TweenService'):Create(frame, TweenInfo.new(dragSpeed), {Position = position}):Play()
+	end
+	
+	frame.InputBegan:Connect(function(input)
+		if (input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch) then 
+			dragToggle = true
+			dragStart = input.Position
+			startPos = frame.Position
+			input.Changed:Connect(function()
+				if input.UserInputState == Enum.UserInputState.End then
+					dragToggle = false
+				end
+			end)
+		end
+	end)
+	
+	UIS.InputChanged:Connect(function(input)
+		if input.UserInputType == Enum.UserInputType.MouseMovement or input.UserInputType == Enum.UserInputType.Touch then
+			if dragToggle then
+				updateInput(input)
+			end
+		end
+	end)
+end
+coroutine.wrap(XXZLT_fake_script)()
+local function BZLT_fake_script() -- Readytohub.UIDrag 
+	local script = Instance.new('LocalScript', Readytohub)
+
+	-- Made by Real_IceyDev (@lceyDex) --
+	-- Simple UI dragger (PC Only/Any device that has a mouse) --
+	
+	local UIS = game:GetService('UserInputService')
+	local frame = script.Parent
+	local dragToggle = nil
+	local dragSpeed = 0.25
+	local dragStart = nil
+	local startPos = nil
+	
+	local function updateInput(input)
+		local delta = input.Position - dragStart
+		local position = UDim2.new(startPos.X.Scale, startPos.X.Offset + delta.X,
+			startPos.Y.Scale, startPos.Y.Offset + delta.Y)
+		game:GetService('TweenService'):Create(frame, TweenInfo.new(dragSpeed), {Position = position}):Play()
+	end
+	
+	frame.InputBegan:Connect(function(input)
+		if (input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch) then 
+			dragToggle = true
+			dragStart = input.Position
+			startPos = frame.Position
+			input.Changed:Connect(function()
+				if input.UserInputState == Enum.UserInputState.End then
+					dragToggle = false
+				end
+			end)
+		end
+	end)
+	
+	UIS.InputChanged:Connect(function(input)
+		if input.UserInputType == Enum.UserInputType.MouseMovement or input.UserInputType == Enum.UserInputType.Touch then
+			if dragToggle then
+				updateInput(input)
+			end
+		end
+	end)
+end
+coroutine.wrap(BZLT_fake_script)()
+local function ITVAZGQ_fake_script() -- TextBox.LocalScript 
+	local script = Instance.new('LocalScript', TextBox)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		script.Parent.Parent.ExecuteEvent:FireServer(script.Parent.Parent.TextBox.Text)
+		end)
+end
+coroutine.wrap(ITVAZGQ_fake_script)()
+local function ZKKZUF_fake_script() -- Clear.LocalScript 
+	local script = Instance.new('LocalScript', Clear)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		script.Parent.Parent.TextBox.Text = ""
+	end)
+end
+coroutine.wrap(ZKKZUF_fake_script)()
+local function OTSHX_fake_script() -- R6.LocalScript 
+	local script = Instance.new('LocalScript', R6)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		script.Parent.Parent.TextBox.Text = ""
+	end)
+end
+coroutine.wrap(OTSHX_fake_script)()
+local function UAYHLED_fake_script() -- R6.LocalScript 
+	local script = Instance.new('LocalScript', R6)
+
+	
+	script.Parent.MouseButton1Click:connect(function() -- ClientHandler script (local script)
+		script.ServerEvent:FireServer()
+	end)
+end
+coroutine.wrap(UAYHLED_fake_script)()
+local function AYYTQBP_fake_script() -- RE.LocalScript 
+	local script = Instance.new('LocalScript', RE)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		script.Parent.Parent.TextBox.Text = ""
+	end)
+end
+coroutine.wrap(AYYTQBP_fake_script)()
+local function QLPA_fake_script() -- RE.Script 
+	local script = Instance.new('Script', RE)
+
+	script.Parent.RemoteEvent.OnServerEvent:Connect(function(plr)
+		local CFrame = plr.Character:FindFirstChild("HumanoidRootPart").CFrame
+		plr:LoadCharacter()	
+		local HRP = workspace:WaitForChild(plr.Name):WaitForChild("HumanoidRootPart")
+		HRP.CFrame = CFrame
+	end)
+end
+coroutine.wrap(QLPA_fake_script)()
+local function TJGNNE_fake_script() -- RE.LocalScript 
+	local script = Instance.new('LocalScript', RE)
+
+	local plr = game:GetService("Players").LocalPlayer
+	
+	script.Parent.MouseButton1Click:Connect(function()
+		local CFrame = plr.Character:FindFirstChild("HumanoidRootPart").CFrame
+		local CameraCFrame = workspace.Camera.CFrame
+		script.Parent.RemoteEvent:FireServer()
+		local HRP = workspace:WaitForChild(plr.Name):WaitForChild("HumanoidRootPart")
+		HRP.CFrame = CFrame
+		workspace.Camera.CFrame = CameraCFrame
+		workspace.Camera.Changed:Wait()
+		workspace.Camera.CFrame = CameraCFrame
+	end)
+end
+coroutine.wrap(TJGNNE_fake_script)()
