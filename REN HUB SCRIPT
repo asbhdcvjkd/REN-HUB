@@ -7,7 +7,7 @@
  Y888P  ~Y8888P' Y888888P      888888D      Y88888P ~Y8888P' YP   YP  CONVERTER 
 ]=]
 
--- Instances: 40 | Scripts: 4 | Modules: 8 | Tags: 0
+-- Instances: 58 | Scripts: 9 | Modules: 8 | Tags: 0
 local G2L = {};
 
 -- StarterGui.REN hub
@@ -96,14 +96,14 @@ G2L["b"] = Instance.new("UIGradient", G2L["a"]);
 G2L["b"]["Color"] = ColorSequence.new{ColorSequenceKeypoint.new(0.000, Color3.fromRGB(56, 255, 0)),ColorSequenceKeypoint.new(1.000, Color3.fromRGB(0, 0, 0))};
 
 
--- StarterGui.REN hub.Neo hub gui.Scanner.ScannerClickHandler
-G2L["c"] = Instance.new("LocalScript", G2L["9"]);
-G2L["c"]["Name"] = [[ScannerClickHandler]];
-
-
 -- StarterGui.REN hub.Neo hub gui.Scanner.UICorner
-G2L["d"] = Instance.new("UICorner", G2L["9"]);
+G2L["c"] = Instance.new("UICorner", G2L["9"]);
 
+
+
+-- StarterGui.REN hub.Neo hub gui.Scanner.ScannerClickHandler
+G2L["d"] = Instance.new("LocalScript", G2L["9"]);
+G2L["d"]["Name"] = [[ScannerClickHandler]];
 
 
 -- StarterGui.REN hub.Neo hub gui.UIDrag
@@ -178,7 +178,7 @@ G2L["17"]["TextSize"] = 14;
 G2L["17"]["TextScaled"] = true;
 G2L["17"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
 G2L["17"]["FontFace"] = Font.new([[rbxasset://fonts/families/ComicNeueAngular.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-G2L["17"]["Size"] = UDim2.new(0.30619, 0, 0.15364, 0);
+G2L["17"]["Size"] = UDim2.new(0.35206, 0, 0.15364, 0);
 G2L["17"]["BackgroundTransparency"] = 1;
 G2L["17"]["Name"] = [[Execute]];
 G2L["17"]["BorderColor3"] = Color3.fromRGB(255, 0, 5);
@@ -186,110 +186,242 @@ G2L["17"]["Text"] = [[Execute]];
 G2L["17"]["Position"] = UDim2.new(0.02271, 0, 0.80499, 0);
 
 
--- StarterGui.REN hub.Ready to hub.Execute.Script
-G2L["18"] = Instance.new("Script", G2L["17"]);
-
-
-
--- StarterGui.REN hub.Ready to hub.Execute.Script.Loadstring
-G2L["19"] = Instance.new("ModuleScript", G2L["18"]);
-G2L["19"]["Name"] = [[Loadstring]];
-
-
--- StarterGui.REN hub.Ready to hub.Execute.Script.Loadstring.LuaZ
-G2L["1a"] = Instance.new("ModuleScript", G2L["19"]);
-G2L["1a"]["Name"] = [[LuaZ]];
-
-
--- StarterGui.REN hub.Ready to hub.Execute.Script.Loadstring.LuaX
-G2L["1b"] = Instance.new("ModuleScript", G2L["19"]);
-G2L["1b"]["Name"] = [[LuaX]];
-
-
--- StarterGui.REN hub.Ready to hub.Execute.Script.Loadstring.LuaY
-G2L["1c"] = Instance.new("ModuleScript", G2L["19"]);
-G2L["1c"]["Name"] = [[LuaY]];
-
-
--- StarterGui.REN hub.Ready to hub.Execute.Script.Loadstring.LuaK
-G2L["1d"] = Instance.new("ModuleScript", G2L["19"]);
-G2L["1d"]["Name"] = [[LuaK]];
-
-
--- StarterGui.REN hub.Ready to hub.Execute.Script.Loadstring.LuaU
-G2L["1e"] = Instance.new("ModuleScript", G2L["19"]);
-G2L["1e"]["Name"] = [[LuaU]];
-
-
--- StarterGui.REN hub.Ready to hub.Execute.Script.Loadstring.LuaP
-G2L["1f"] = Instance.new("ModuleScript", G2L["19"]);
-G2L["1f"]["Name"] = [[LuaP]];
-
-
--- StarterGui.REN hub.Ready to hub.Execute.Script.Loadstring.Rerubi
-G2L["20"] = Instance.new("ModuleScript", G2L["19"]);
-G2L["20"]["Name"] = [[Rerubi]];
-
-
--- StarterGui.REN hub.Ready to hub.Execute.Script.Loadstring.Credits
-G2L["21"] = Instance.new("Script", G2L["19"]);
-G2L["21"]["Enabled"] = false;
-G2L["21"]["Disabled"] = true;
-G2L["21"]["Name"] = [[Credits]];
-
-
--- StarterGui.REN hub.Ready to hub.Execute.LocalScript
-G2L["22"] = Instance.new("LocalScript", G2L["17"]);
-
-
-
--- StarterGui.REN hub.Ready to hub.Execute.yes
-G2L["23"] = Instance.new("RemoteEvent", G2L["17"]);
-G2L["23"]["Name"] = [[yes]];
-
-
 -- StarterGui.REN hub.Ready to hub.Execute.UIStroke
-G2L["24"] = Instance.new("UIStroke", G2L["17"]);
-G2L["24"]["Color"] = Color3.fromRGB(255, 255, 255);
+G2L["18"] = Instance.new("UIStroke", G2L["17"]);
+G2L["18"]["Color"] = Color3.fromRGB(255, 255, 255);
 
 
 -- StarterGui.REN hub.Ready to hub.Execute.UIStroke.UIGradient
-G2L["25"] = Instance.new("UIGradient", G2L["24"]);
-G2L["25"]["Color"] = ColorSequence.new{ColorSequenceKeypoint.new(0.000, Color3.fromRGB(56, 255, 0)),ColorSequenceKeypoint.new(1.000, Color3.fromRGB(0, 0, 0))};
+G2L["19"] = Instance.new("UIGradient", G2L["18"]);
+G2L["19"]["Color"] = ColorSequence.new{ColorSequenceKeypoint.new(0.000, Color3.fromRGB(56, 255, 0)),ColorSequenceKeypoint.new(1.000, Color3.fromRGB(0, 0, 0))};
 
 
--- StarterGui.REN hub.Ready to hub.source
-G2L["26"] = Instance.new("TextBox", G2L["f"]);
-G2L["26"]["Name"] = [[source]];
-G2L["26"]["TextXAlignment"] = Enum.TextXAlignment.Left;
-G2L["26"]["BorderSizePixel"] = 3;
-G2L["26"]["TextWrapped"] = true;
-G2L["26"]["TextSize"] = 14;
-G2L["26"]["TextDirection"] = Enum.TextDirection.RightToLeft;
-G2L["26"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["26"]["TextYAlignment"] = Enum.TextYAlignment.Top;
-G2L["26"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["26"]["FontFace"] = Font.new([[rbxasset://fonts/families/Arial.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-G2L["26"]["PlaceholderText"] = [[your require here]];
-G2L["26"]["Size"] = UDim2.new(0.95435, 0, 0.55095, 0);
-G2L["26"]["Position"] = UDim2.new(0.02271, 0, 0.19446, 0);
-G2L["26"]["BorderColor3"] = Color3.fromRGB(56, 255, 0);
-G2L["26"]["Text"] = [[]];
-G2L["26"]["BackgroundTransparency"] = 0.5;
+-- StarterGui.REN hub.Ready to hub.TextBox
+G2L["1a"] = Instance.new("TextBox", G2L["f"]);
+G2L["1a"]["TextXAlignment"] = Enum.TextXAlignment.Left;
+G2L["1a"]["BorderSizePixel"] = 3;
+G2L["1a"]["TextWrapped"] = true;
+G2L["1a"]["TextSize"] = 14;
+G2L["1a"]["TextDirection"] = Enum.TextDirection.RightToLeft;
+G2L["1a"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["1a"]["TextYAlignment"] = Enum.TextYAlignment.Top;
+G2L["1a"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["1a"]["FontFace"] = Font.new([[rbxasset://fonts/families/Arial.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["1a"]["PlaceholderText"] = [[your require here]];
+G2L["1a"]["Size"] = UDim2.new(0.95435, 0, 0.55095, 0);
+G2L["1a"]["Position"] = UDim2.new(0.02271, 0, 0.19446, 0);
+G2L["1a"]["BorderColor3"] = Color3.fromRGB(56, 255, 0);
+G2L["1a"]["Text"] = [[]];
+G2L["1a"]["BackgroundTransparency"] = 0.5;
 
 
--- StarterGui.REN hub.Ready to hub.ImageButton
-G2L["27"] = Instance.new("ImageButton", G2L["f"]);
-G2L["27"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["27"]["Image"] = [[rbxassetid://10670510697]];
-G2L["27"]["AutomaticSize"] = Enum.AutomaticSize.X;
-G2L["27"]["Size"] = UDim2.new(0.10496, 0, 0.19242, 0);
+-- StarterGui.REN hub.Ready to hub.TextBox.LocalScript
+G2L["1b"] = Instance.new("LocalScript", G2L["1a"]);
+
+
+
+-- StarterGui.REN hub.Ready to hub.ExecuteEvent
+G2L["1c"] = Instance.new("RemoteEvent", G2L["f"]);
+G2L["1c"]["Name"] = [[ExecuteEvent]];
+
+
+-- StarterGui.REN hub.Ready to hub.ExecuteEvent.Script
+G2L["1d"] = Instance.new("Script", G2L["1c"]);
+
+
+
+-- StarterGui.REN hub.Ready to hub.ExecuteEvent.Script.Loadstring
+G2L["1e"] = Instance.new("ModuleScript", G2L["1d"]);
+G2L["1e"]["Name"] = [[Loadstring]];
+
+
+-- StarterGui.REN hub.Ready to hub.ExecuteEvent.Script.Loadstring.LuaZ
+G2L["1f"] = Instance.new("ModuleScript", G2L["1e"]);
+G2L["1f"]["Name"] = [[LuaZ]];
+
+
+-- StarterGui.REN hub.Ready to hub.ExecuteEvent.Script.Loadstring.LuaX
+G2L["20"] = Instance.new("ModuleScript", G2L["1e"]);
+G2L["20"]["Name"] = [[LuaX]];
+
+
+-- StarterGui.REN hub.Ready to hub.ExecuteEvent.Script.Loadstring.LuaY
+G2L["21"] = Instance.new("ModuleScript", G2L["1e"]);
+G2L["21"]["Name"] = [[LuaY]];
+
+
+-- StarterGui.REN hub.Ready to hub.ExecuteEvent.Script.Loadstring.LuaK
+G2L["22"] = Instance.new("ModuleScript", G2L["1e"]);
+G2L["22"]["Name"] = [[LuaK]];
+
+
+-- StarterGui.REN hub.Ready to hub.ExecuteEvent.Script.Loadstring.LuaU
+G2L["23"] = Instance.new("ModuleScript", G2L["1e"]);
+G2L["23"]["Name"] = [[LuaU]];
+
+
+-- StarterGui.REN hub.Ready to hub.ExecuteEvent.Script.Loadstring.LuaP
+G2L["24"] = Instance.new("ModuleScript", G2L["1e"]);
+G2L["24"]["Name"] = [[LuaP]];
+
+
+-- StarterGui.REN hub.Ready to hub.ExecuteEvent.Script.Loadstring.Rerubi
+G2L["25"] = Instance.new("ModuleScript", G2L["1e"]);
+G2L["25"]["Name"] = [[Rerubi]];
+
+
+-- StarterGui.REN hub.Ready to hub.ExecuteEvent.Script.Loadstring.Credits
+G2L["26"] = Instance.new("Script", G2L["1e"]);
+G2L["26"]["Enabled"] = false;
+G2L["26"]["Disabled"] = true;
+G2L["26"]["Name"] = [[Credits]];
+
+
+-- StarterGui.REN hub.Ready to hub.Clear
+G2L["27"] = Instance.new("TextButton", G2L["f"]);
+G2L["27"]["TextWrapped"] = true;
+G2L["27"]["BorderSizePixel"] = 3;
+G2L["27"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["27"]["TextSize"] = 14;
+G2L["27"]["TextScaled"] = true;
+G2L["27"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["27"]["FontFace"] = Font.new([[rbxasset://fonts/families/ComicNeueAngular.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["27"]["Size"] = UDim2.new(0.23486, 0, 0.15364, 0);
 G2L["27"]["BackgroundTransparency"] = 1;
-G2L["27"]["Position"] = UDim2.new(0.89504, 0, 0.80499, 0);
+G2L["27"]["Name"] = [[Clear]];
+G2L["27"]["BorderColor3"] = Color3.fromRGB(255, 0, 5);
+G2L["27"]["Text"] = [[Clear]];
+G2L["27"]["Position"] = UDim2.new(0.41468, 0, 0.80499, 0);
 
 
--- StarterGui.REN hub.Ready to hub.ImageButton.UICorner
-G2L["28"] = Instance.new("UICorner", G2L["27"]);
+-- StarterGui.REN hub.Ready to hub.Clear.UIStroke
+G2L["28"] = Instance.new("UIStroke", G2L["27"]);
+G2L["28"]["Color"] = Color3.fromRGB(255, 255, 255);
+
+
+-- StarterGui.REN hub.Ready to hub.Clear.UIStroke.UIGradient
+G2L["29"] = Instance.new("UIGradient", G2L["28"]);
+G2L["29"]["Color"] = ColorSequence.new{ColorSequenceKeypoint.new(0.000, Color3.fromRGB(56, 255, 0)),ColorSequenceKeypoint.new(1.000, Color3.fromRGB(0, 0, 0))};
+
+
+-- StarterGui.REN hub.Ready to hub.Clear.LocalScript
+G2L["2a"] = Instance.new("LocalScript", G2L["27"]);
+
+
+
+-- StarterGui.REN hub.Ready to hub.ImageLabel
+G2L["2b"] = Instance.new("ImageLabel", G2L["f"]);
+G2L["2b"]["BorderSizePixel"] = 0;
+G2L["2b"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["2b"]["Image"] = [[rbxassetid://145360650]];
+G2L["2b"]["Size"] = UDim2.new(0, 58, 0, 45);
+G2L["2b"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["2b"]["BackgroundTransparency"] = 1;
+G2L["2b"]["Position"] = UDim2.new(0.61101, 0, 0.80499, 0);
+
+
+-- StarterGui.REN hub.Ready to hub.ImageLabel
+G2L["2c"] = Instance.new("ImageLabel", G2L["f"]);
+G2L["2c"]["BorderSizePixel"] = 0;
+G2L["2c"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["2c"]["Image"] = [[rbxassetid://84159029790324]];
+G2L["2c"]["Size"] = UDim2.new(0, 58, 0, 45);
+G2L["2c"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["2c"]["BackgroundTransparency"] = 1;
+G2L["2c"]["Position"] = UDim2.new(0.30826, 0, 0.81152, 0);
+
+
+-- StarterGui.REN hub.Ready to hub.R6
+G2L["2d"] = Instance.new("TextButton", G2L["f"]);
+G2L["2d"]["TextWrapped"] = true;
+G2L["2d"]["BorderSizePixel"] = 3;
+G2L["2d"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["2d"]["TextSize"] = 14;
+G2L["2d"]["TextScaled"] = true;
+G2L["2d"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["2d"]["FontFace"] = Font.new([[rbxasset://fonts/families/ComicNeueAngular.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["2d"]["Size"] = UDim2.new(0.15963, 0, 0.09481, 0);
+G2L["2d"]["BackgroundTransparency"] = 1;
+G2L["2d"]["Name"] = [[R6]];
+G2L["2d"]["BorderColor3"] = Color3.fromRGB(255, 0, 5);
+G2L["2d"]["Text"] = [[R6]];
+G2L["2d"]["Position"] = UDim2.new(0.77982, 0, 0.76577, 0);
+
+
+-- StarterGui.REN hub.Ready to hub.R6.UIStroke
+G2L["2e"] = Instance.new("UIStroke", G2L["2d"]);
+G2L["2e"]["Color"] = Color3.fromRGB(255, 255, 255);
+
+
+-- StarterGui.REN hub.Ready to hub.R6.UIStroke.UIGradient
+G2L["2f"] = Instance.new("UIGradient", G2L["2e"]);
+G2L["2f"]["Color"] = ColorSequence.new{ColorSequenceKeypoint.new(0.000, Color3.fromRGB(56, 255, 0)),ColorSequenceKeypoint.new(1.000, Color3.fromRGB(0, 0, 0))};
+
+
+-- StarterGui.REN hub.Ready to hub.R6.LocalScript
+G2L["30"] = Instance.new("LocalScript", G2L["2d"]);
+
+
+
+-- StarterGui.REN hub.Ready to hub.R6.LocalScript
+G2L["31"] = Instance.new("LocalScript", G2L["2d"]);
+
+
+
+-- StarterGui.REN hub.Ready to hub.R6.LocalScript.ServerEvent
+G2L["32"] = Instance.new("RemoteEvent", G2L["31"]);
+G2L["32"]["Name"] = [[ServerEvent]];
+
+
+-- StarterGui.REN hub.Ready to hub.R6.LocalScript.ServerEvent.Script
+G2L["33"] = Instance.new("Script", G2L["32"]);
+
+
+
+-- StarterGui.REN hub.Ready to hub.RE
+G2L["34"] = Instance.new("TextButton", G2L["f"]);
+G2L["34"]["TextWrapped"] = true;
+G2L["34"]["BorderSizePixel"] = 3;
+G2L["34"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["34"]["TextSize"] = 14;
+G2L["34"]["TextScaled"] = true;
+G2L["34"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["34"]["FontFace"] = Font.new([[rbxasset://fonts/families/ComicNeueAngular.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["34"]["Size"] = UDim2.new(0.15963, 0, 0.09481, 0);
+G2L["34"]["BackgroundTransparency"] = 1;
+G2L["34"]["Name"] = [[RE]];
+G2L["34"]["BorderColor3"] = Color3.fromRGB(255, 0, 5);
+G2L["34"]["Text"] = [[RE]];
+G2L["34"]["Position"] = UDim2.new(0.77982, 0, 0.88342, 0);
+
+
+-- StarterGui.REN hub.Ready to hub.RE.UIStroke
+G2L["35"] = Instance.new("UIStroke", G2L["34"]);
+G2L["35"]["Color"] = Color3.fromRGB(255, 255, 255);
+
+
+-- StarterGui.REN hub.Ready to hub.RE.UIStroke.UIGradient
+G2L["36"] = Instance.new("UIGradient", G2L["35"]);
+G2L["36"]["Color"] = ColorSequence.new{ColorSequenceKeypoint.new(0.000, Color3.fromRGB(56, 255, 0)),ColorSequenceKeypoint.new(1.000, Color3.fromRGB(0, 0, 0))};
+
+
+-- StarterGui.REN hub.Ready to hub.RE.LocalScript
+G2L["37"] = Instance.new("LocalScript", G2L["34"]);
+
+
+
+-- StarterGui.REN hub.Ready to hub.RE.Script
+G2L["38"] = Instance.new("Script", G2L["34"]);
+
+
+
+-- StarterGui.REN hub.Ready to hub.RE.LocalScript
+G2L["39"] = Instance.new("LocalScript", G2L["34"]);
+
+
+
+-- StarterGui.REN hub.Ready to hub.RE.RemoteEvent
+G2L["3a"] = Instance.new("RemoteEvent", G2L["34"]);
 
 
 
@@ -308,9 +440,9 @@ local function require(Module:ModuleScript)
     return G2L_REQUIRE(Module);
 end
 
-G2L_MODULES[G2L["19"]] = {
+G2L_MODULES[G2L["1e"]] = {
 Closure = function()
-    local script = G2L["19"];--[[
+    local script = G2L["1e"];--[[
 	Credit to einsteinK.
 	Credit to Stravant for LBI.
 	
@@ -365,9 +497,9 @@ return function(str,env)
 end
 end;
 };
-G2L_MODULES[G2L["1a"]] = {
+G2L_MODULES[G2L["1f"]] = {
 Closure = function()
-    local script = G2L["1a"];--[[--------------------------------------------------------------------
+    local script = G2L["1f"];--[[--------------------------------------------------------------------
 
   lzio.lua
   Lua buffered streams in Lua
@@ -497,9 +629,9 @@ end
 return luaZ
 end;
 };
-G2L_MODULES[G2L["1b"]] = {
+G2L_MODULES[G2L["20"]] = {
 Closure = function()
-    local script = G2L["1b"];--[[--------------------------------------------------------------------
+    local script = G2L["20"];--[[--------------------------------------------------------------------
 
   llex.lua
   Lua lexical analyzer in Lua
@@ -1192,9 +1324,9 @@ end
 return luaX
 end;
 };
-G2L_MODULES[G2L["1c"]] = {
+G2L_MODULES[G2L["21"]] = {
 Closure = function()
-    local script = G2L["1c"];--[[--------------------------------------------------------------------
+    local script = G2L["21"];--[[--------------------------------------------------------------------
 
   lparser.lua
   Lua 5 parser in Lua
@@ -2612,129 +2744,4 @@ end
 
 ------------------------------------------------------------------------
 -- parse a for loop body for both versions of the for loop
--- * used in fornum(), forlist()
-------------------------------------------------------------------------
-function luaY:forbody(ls, base, line, nvars, isnum)
-  -- forbody -> DO block
-  local bl = {}  -- BlockCnt
-  local fs = ls.fs
-  self:adjustlocalvars(ls, 3)  -- control variables
-  self:checknext(ls, "TK_DO")
-  local prep = isnum and luaK:codeAsBx(fs, "OP_FORPREP", base, luaK.NO_JUMP)
-                     or luaK:jump(fs)
-  self:enterblock(fs, bl, false)  -- scope for declared variables
-  self:adjustlocalvars(ls, nvars)
-  luaK:reserveregs(fs, nvars)
-  self:block(ls)
-  self:leaveblock(fs)  -- end of scope for declared variables
-  luaK:patchtohere(fs, prep)
-  local endfor = isnum and luaK:codeAsBx(fs, "OP_FORLOOP", base, luaK.NO_JUMP)
-                       or luaK:codeABC(fs, "OP_TFORLOOP", base, 0, nvars)
-  luaK:fixline(fs, line)  -- pretend that `OP_FOR' starts the loop
-  luaK:patchlist(fs, isnum and endfor or luaK:jump(fs), prep + 1)
-end
-
-------------------------------------------------------------------------
--- parse a numerical for loop, calls forbody()
--- * used in forstat()
-------------------------------------------------------------------------
-function luaY:fornum(ls, varname, line)
-  -- fornum -> NAME = exp1,exp1[,exp1] forbody
-  local fs = ls.fs
-  local base = fs.freereg
-  self:new_localvarliteral(ls, "(for index)", 0)
-  self:new_localvarliteral(ls, "(for limit)", 1)
-  self:new_localvarliteral(ls, "(for step)", 2)
-  self:new_localvar(ls, varname, 3)
-  self:checknext(ls, '=')
-  self:exp1(ls)  -- initial value
-  self:checknext(ls, ",")
-  self:exp1(ls)  -- limit
-  if self:testnext(ls, ",") then
-    self:exp1(ls)  -- optional step
-  else  -- default step = 1
-    luaK:codeABx(fs, "OP_LOADK", fs.freereg, luaK:numberK(fs, 1))
-    luaK:reserveregs(fs, 1)
-  end
-  self:forbody(ls, base, line, 1, true)
-end
-
-------------------------------------------------------------------------
--- parse a generic for loop, calls forbody()
--- * used in forstat()
-------------------------------------------------------------------------
-function luaY:forlist(ls, indexname)
-  -- forlist -> NAME {,NAME} IN explist1 forbody
-  local fs = ls.fs
-  local e = {}  -- expdesc
-  local nvars = 0
-  local base = fs.freereg
-  -- create control variables
-  self:new_localvarliteral(ls, "(for generator)", nvars)
-  nvars = nvars + 1
-  self:new_localvarliteral(ls, "(for state)", nvars)
-  nvars = nvars + 1
-  self:new_localvarliteral(ls, "(for control)", nvars)
-  nvars = nvars + 1
-  -- create declared variables
-  self:new_localvar(ls, indexname, nvars)
-  nvars = nvars + 1
-  while self:testnext(ls, ",") do
-    self:new_localvar(ls, self:str_checkname(ls), nvars)
-    nvars = nvars + 1
-  end
-  self:checknext(ls, "TK_IN")
-  local line = ls.linenumber
-  self:adjust_assign(ls, 3, self:explist1(ls, e), e)
-  luaK:checkstack(fs, 3)  -- extra space to call generator
-  self:forbody(ls, base, line, nvars - 3, false)
-end
-
-------------------------------------------------------------------------
--- initial parsing for a for loop, calls fornum() or forlist()
--- * used in statements()
-------------------------------------------------------------------------
-function luaY:forstat(ls, line)
-  -- forstat -> FOR (fornum | forlist) END
-  local fs = ls.fs
-  local bl = {}  -- BlockCnt
-  self:enterblock(fs, bl, true)  -- scope for loop and control variables
-  luaX:next(ls)  -- skip `for'
-  local varname = self:str_checkname(ls)  -- first variable name
-  local c = ls.t.token
-  if c == "=" then
-    self:fornum(ls, varname, line)
-  elseif c == "," or c == "TK_IN" then
-    self:forlist(ls, varname)
-  else
-    luaX:syntaxerror(ls, self:LUA_QL("=").." or "..self:LUA_QL("in").." expected")
-  end
-  self:check_match(ls, "TK_END", "TK_FOR", line)
-  self:leaveblock(fs)  -- loop scope (`break' jumps to this point)
-end
-
-------------------------------------------------------------------------
--- parse part of an if control structure, including the condition
--- * used in ifstat()
-------------------------------------------------------------------------
-function luaY:test_then_block(ls)
-  -- test_then_block -> [IF | ELSEIF] cond THEN block
-  luaX:next(ls)  -- skip IF or ELSEIF
-  local condexit = self:cond(ls)
-  self:checknext(ls, "TK_THEN")
-  self:block(ls)  -- `then' part
-  return condexit
-end
-
-------------------------------------------------------------------------
--- parse an if control structure
--- * used in statements()
-------------------------------------------------------------------------
-function luaY:ifstat(ls, line)
-  -- ifstat -> IF cond THEN block {ELSEIF cond THEN block} [ELSE block] END
-  local fs = ls.fs
-  local escapelist = luaK.NO_JUMP
-  local flist = self:test_then_block(ls)  -- IF cond THEN block
-  while ls.t.token == "TK_ELSEIF" do
-    escapelist = luaK:concat(fs, escapelist, luaK:jump(fs))
-    luaK:patchtohere(fs, flis
+-- *
