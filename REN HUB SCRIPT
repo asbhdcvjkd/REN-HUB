@@ -10,14 +10,14 @@
 -- Instances: 40 | Scripts: 4 | Modules: 8 | Tags: 0
 local G2L = {};
 
--- Workspace.MainModule.REN hub
+-- StarterGui.REN hub
 G2L["1"] = Instance.new("ScreenGui", game:GetService("Players").LocalPlayer:WaitForChild("PlayerGui"));
 G2L["1"]["Name"] = [[REN hub]];
 G2L["1"]["ZIndexBehavior"] = Enum.ZIndexBehavior.Sibling;
 G2L["1"]["ResetOnSpawn"] = false;
 
 
--- Workspace.MainModule.REN hub.Neo hub gui
+-- StarterGui.REN hub.Neo hub gui
 G2L["2"] = Instance.new("Frame", G2L["1"]);
 G2L["2"]["BorderSizePixel"] = 0;
 G2L["2"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
@@ -28,22 +28,22 @@ G2L["2"]["Name"] = [[Neo hub gui]];
 G2L["2"]["BackgroundTransparency"] = 0.6;
 
 
--- Workspace.MainModule.REN hub.Neo hub gui.UICorner
+-- StarterGui.REN hub.Neo hub gui.UICorner
 G2L["3"] = Instance.new("UICorner", G2L["2"]);
 
 
 
--- Workspace.MainModule.REN hub.Neo hub gui.UIStroke
+-- StarterGui.REN hub.Neo hub gui.UIStroke
 G2L["4"] = Instance.new("UIStroke", G2L["2"]);
 G2L["4"]["Color"] = Color3.fromRGB(255, 255, 255);
 
 
--- Workspace.MainModule.REN hub.Neo hub gui.UIStroke.UIGradient
+-- StarterGui.REN hub.Neo hub gui.UIStroke.UIGradient
 G2L["5"] = Instance.new("UIGradient", G2L["4"]);
 G2L["5"]["Color"] = ColorSequence.new{ColorSequenceKeypoint.new(0.000, Color3.fromRGB(56, 255, 0)),ColorSequenceKeypoint.new(1.000, Color3.fromRGB(0, 0, 0))};
 
 
--- Workspace.MainModule.REN hub.Neo hub gui.TextLabel
+-- StarterGui.REN hub.Neo hub gui.TextLabel
 G2L["6"] = Instance.new("TextLabel", G2L["2"]);
 G2L["6"]["TextWrapped"] = true;
 G2L["6"]["BorderSizePixel"] = 0;
@@ -59,17 +59,17 @@ G2L["6"]["Text"] = [[REN hub]];
 G2L["6"]["Position"] = UDim2.new(0.22936, 0, 0, 0);
 
 
--- Workspace.MainModule.REN hub.Neo hub gui.TextLabel.UIStroke
+-- StarterGui.REN hub.Neo hub gui.TextLabel.UIStroke
 G2L["7"] = Instance.new("UIStroke", G2L["6"]);
 G2L["7"]["Color"] = Color3.fromRGB(255, 255, 255);
 
 
--- Workspace.MainModule.REN hub.Neo hub gui.TextLabel.UIStroke.UIGradient
+-- StarterGui.REN hub.Neo hub gui.TextLabel.UIStroke.UIGradient
 G2L["8"] = Instance.new("UIGradient", G2L["7"]);
 G2L["8"]["Color"] = ColorSequence.new{ColorSequenceKeypoint.new(0.000, Color3.fromRGB(56, 255, 0)),ColorSequenceKeypoint.new(1.000, Color3.fromRGB(0, 0, 0))};
 
 
--- Workspace.MainModule.REN hub.Neo hub gui.Scanner
+-- StarterGui.REN hub.Neo hub gui.Scanner
 G2L["9"] = Instance.new("TextButton", G2L["2"]);
 G2L["9"]["TextWrapped"] = true;
 G2L["9"]["BorderSizePixel"] = 0;
@@ -86,32 +86,32 @@ G2L["9"]["Text"] = [[Start Scanner]];
 G2L["9"]["Position"] = UDim2.new(0.26239, 0, 0.38889, 0);
 
 
--- Workspace.MainModule.REN hub.Neo hub gui.Scanner.UIStroke
+-- StarterGui.REN hub.Neo hub gui.Scanner.UIStroke
 G2L["a"] = Instance.new("UIStroke", G2L["9"]);
 G2L["a"]["Color"] = Color3.fromRGB(255, 255, 255);
 
 
--- Workspace.MainModule.REN hub.Neo hub gui.Scanner.UIStroke.UIGradient
+-- StarterGui.REN hub.Neo hub gui.Scanner.UIStroke.UIGradient
 G2L["b"] = Instance.new("UIGradient", G2L["a"]);
 G2L["b"]["Color"] = ColorSequence.new{ColorSequenceKeypoint.new(0.000, Color3.fromRGB(56, 255, 0)),ColorSequenceKeypoint.new(1.000, Color3.fromRGB(0, 0, 0))};
 
 
--- Workspace.MainModule.REN hub.Neo hub gui.Scanner.ScannerClickHandler
+-- StarterGui.REN hub.Neo hub gui.Scanner.ScannerClickHandler
 G2L["c"] = Instance.new("LocalScript", G2L["9"]);
 G2L["c"]["Name"] = [[ScannerClickHandler]];
 
 
--- Workspace.MainModule.REN hub.Neo hub gui.Scanner.UICorner
+-- StarterGui.REN hub.Neo hub gui.Scanner.UICorner
 G2L["d"] = Instance.new("UICorner", G2L["9"]);
 
 
 
--- Workspace.MainModule.REN hub.Neo hub gui.UIDrag
+-- StarterGui.REN hub.Neo hub gui.UIDrag
 G2L["e"] = Instance.new("LocalScript", G2L["2"]);
 G2L["e"]["Name"] = [[UIDrag]];
 
 
--- Workspace.MainModule.REN hub.Ready to hub
+-- StarterGui.REN hub.Ready to hub
 G2L["f"] = Instance.new("Frame", G2L["1"]);
 G2L["f"]["Visible"] = false;
 G2L["f"]["BorderSizePixel"] = 0;
@@ -123,22 +123,22 @@ G2L["f"]["Name"] = [[Ready to hub]];
 G2L["f"]["BackgroundTransparency"] = 0.6;
 
 
--- Workspace.MainModule.REN hub.Ready to hub.UICorner
+-- StarterGui.REN hub.Ready to hub.UICorner
 G2L["10"] = Instance.new("UICorner", G2L["f"]);
 
 
 
--- Workspace.MainModule.REN hub.Ready to hub.UIStroke
+-- StarterGui.REN hub.Ready to hub.UIStroke
 G2L["11"] = Instance.new("UIStroke", G2L["f"]);
 G2L["11"]["Color"] = Color3.fromRGB(255, 255, 255);
 
 
--- Workspace.MainModule.REN hub.Ready to hub.UIStroke.UIGradient
+-- StarterGui.REN hub.Ready to hub.UIStroke.UIGradient
 G2L["12"] = Instance.new("UIGradient", G2L["11"]);
 G2L["12"]["Color"] = ColorSequence.new{ColorSequenceKeypoint.new(0.000, Color3.fromRGB(56, 255, 0)),ColorSequenceKeypoint.new(1.000, Color3.fromRGB(0, 0, 0))};
 
 
--- Workspace.MainModule.REN hub.Ready to hub.TextLabel
+-- StarterGui.REN hub.Ready to hub.TextLabel
 G2L["13"] = Instance.new("TextLabel", G2L["f"]);
 G2L["13"]["TextWrapped"] = true;
 G2L["13"]["BorderSizePixel"] = 0;
@@ -154,22 +154,22 @@ G2L["13"]["Text"] = [[REN hub]];
 G2L["13"]["Position"] = UDim2.new(0.22752, 0, 0, 0);
 
 
--- Workspace.MainModule.REN hub.Ready to hub.TextLabel.UIStroke
+-- StarterGui.REN hub.Ready to hub.TextLabel.UIStroke
 G2L["14"] = Instance.new("UIStroke", G2L["13"]);
 G2L["14"]["Color"] = Color3.fromRGB(255, 255, 255);
 
 
--- Workspace.MainModule.REN hub.Ready to hub.TextLabel.UIStroke.UIGradient
+-- StarterGui.REN hub.Ready to hub.TextLabel.UIStroke.UIGradient
 G2L["15"] = Instance.new("UIGradient", G2L["14"]);
 G2L["15"]["Color"] = ColorSequence.new{ColorSequenceKeypoint.new(0.000, Color3.fromRGB(56, 255, 0)),ColorSequenceKeypoint.new(1.000, Color3.fromRGB(0, 0, 0))};
 
 
--- Workspace.MainModule.REN hub.Ready to hub.UIDrag
+-- StarterGui.REN hub.Ready to hub.UIDrag
 G2L["16"] = Instance.new("LocalScript", G2L["f"]);
 G2L["16"]["Name"] = [[UIDrag]];
 
 
--- Workspace.MainModule.REN hub.Ready to hub.Execute
+-- StarterGui.REN hub.Ready to hub.Execute
 G2L["17"] = Instance.new("TextButton", G2L["f"]);
 G2L["17"]["TextWrapped"] = true;
 G2L["17"]["BorderSizePixel"] = 3;
@@ -186,81 +186,80 @@ G2L["17"]["Text"] = [[Execute]];
 G2L["17"]["Position"] = UDim2.new(0.02271, 0, 0.80499, 0);
 
 
--- Workspace.MainModule.REN hub.Ready to hub.Execute.Script
+-- StarterGui.REN hub.Ready to hub.Execute.Script
 G2L["18"] = Instance.new("Script", G2L["17"]);
 
 
 
--- Workspace.MainModule.REN hub.Ready to hub.Execute.Script.Loadstring
+-- StarterGui.REN hub.Ready to hub.Execute.Script.Loadstring
 G2L["19"] = Instance.new("ModuleScript", G2L["18"]);
 G2L["19"]["Name"] = [[Loadstring]];
 
 
--- Workspace.MainModule.REN hub.Ready to hub.Execute.Script.Loadstring.LuaZ
+-- StarterGui.REN hub.Ready to hub.Execute.Script.Loadstring.LuaZ
 G2L["1a"] = Instance.new("ModuleScript", G2L["19"]);
 G2L["1a"]["Name"] = [[LuaZ]];
 
 
--- Workspace.MainModule.REN hub.Ready to hub.Execute.Script.Loadstring.LuaX
+-- StarterGui.REN hub.Ready to hub.Execute.Script.Loadstring.LuaX
 G2L["1b"] = Instance.new("ModuleScript", G2L["19"]);
 G2L["1b"]["Name"] = [[LuaX]];
 
 
--- Workspace.MainModule.REN hub.Ready to hub.Execute.Script.Loadstring.LuaY
+-- StarterGui.REN hub.Ready to hub.Execute.Script.Loadstring.LuaY
 G2L["1c"] = Instance.new("ModuleScript", G2L["19"]);
 G2L["1c"]["Name"] = [[LuaY]];
 
 
--- Workspace.MainModule.REN hub.Ready to hub.Execute.Script.Loadstring.LuaK
+-- StarterGui.REN hub.Ready to hub.Execute.Script.Loadstring.LuaK
 G2L["1d"] = Instance.new("ModuleScript", G2L["19"]);
 G2L["1d"]["Name"] = [[LuaK]];
 
 
--- Workspace.MainModule.REN hub.Ready to hub.Execute.Script.Loadstring.LuaU
+-- StarterGui.REN hub.Ready to hub.Execute.Script.Loadstring.LuaU
 G2L["1e"] = Instance.new("ModuleScript", G2L["19"]);
 G2L["1e"]["Name"] = [[LuaU]];
 
 
--- Workspace.MainModule.REN hub.Ready to hub.Execute.Script.Loadstring.LuaP
+-- StarterGui.REN hub.Ready to hub.Execute.Script.Loadstring.LuaP
 G2L["1f"] = Instance.new("ModuleScript", G2L["19"]);
 G2L["1f"]["Name"] = [[LuaP]];
 
 
--- Workspace.MainModule.REN hub.Ready to hub.Execute.Script.Loadstring.Rerubi
+-- StarterGui.REN hub.Ready to hub.Execute.Script.Loadstring.Rerubi
 G2L["20"] = Instance.new("ModuleScript", G2L["19"]);
 G2L["20"]["Name"] = [[Rerubi]];
 
 
--- Workspace.MainModule.REN hub.Ready to hub.Execute.Script.Loadstring.Credits
+-- StarterGui.REN hub.Ready to hub.Execute.Script.Loadstring.Credits
 G2L["21"] = Instance.new("Script", G2L["19"]);
 G2L["21"]["Enabled"] = false;
 G2L["21"]["Disabled"] = true;
 G2L["21"]["Name"] = [[Credits]];
 
 
--- Workspace.MainModule.REN hub.Ready to hub.Execute.LocalScript
+-- StarterGui.REN hub.Ready to hub.Execute.LocalScript
 G2L["22"] = Instance.new("LocalScript", G2L["17"]);
 
 
 
--- Workspace.MainModule.REN hub.Ready to hub.Execute.yes
+-- StarterGui.REN hub.Ready to hub.Execute.yes
 G2L["23"] = Instance.new("RemoteEvent", G2L["17"]);
 G2L["23"]["Name"] = [[yes]];
 
 
--- Workspace.MainModule.REN hub.Ready to hub.Execute.UIStroke
+-- StarterGui.REN hub.Ready to hub.Execute.UIStroke
 G2L["24"] = Instance.new("UIStroke", G2L["17"]);
 G2L["24"]["Color"] = Color3.fromRGB(255, 255, 255);
 
 
--- Workspace.MainModule.REN hub.Ready to hub.Execute.UIStroke.UIGradient
+-- StarterGui.REN hub.Ready to hub.Execute.UIStroke.UIGradient
 G2L["25"] = Instance.new("UIGradient", G2L["24"]);
 G2L["25"]["Color"] = ColorSequence.new{ColorSequenceKeypoint.new(0.000, Color3.fromRGB(56, 255, 0)),ColorSequenceKeypoint.new(1.000, Color3.fromRGB(0, 0, 0))};
 
 
--- Workspace.MainModule.REN hub.Ready to hub.source
+-- StarterGui.REN hub.Ready to hub.source
 G2L["26"] = Instance.new("TextBox", G2L["f"]);
-G2L["26"]["CursorPosition"] = -1;
 G2L["26"]["Name"] = [[source]];
 G2L["26"]["TextXAlignment"] = Enum.TextXAlignment.Left;
 G2L["26"]["BorderSizePixel"] = 3;
@@ -279,7 +278,7 @@ G2L["26"]["Text"] = [[]];
 G2L["26"]["BackgroundTransparency"] = 0.5;
 
 
--- Workspace.MainModule.REN hub.Ready to hub.ImageButton
+-- StarterGui.REN hub.Ready to hub.ImageButton
 G2L["27"] = Instance.new("ImageButton", G2L["f"]);
 G2L["27"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
 G2L["27"]["Image"] = [[rbxassetid://10670510697]];
@@ -289,7 +288,7 @@ G2L["27"]["BackgroundTransparency"] = 1;
 G2L["27"]["Position"] = UDim2.new(0.89504, 0, 0.80499, 0);
 
 
--- Workspace.MainModule.REN hub.Ready to hub.ImageButton.UICorner
+-- StarterGui.REN hub.Ready to hub.ImageButton.UICorner
 G2L["28"] = Instance.new("UICorner", G2L["27"]);
 
 
@@ -2729,4 +2728,13 @@ end
 
 ------------------------------------------------------------------------
 -- parse an if control structure
--- * used in st
+-- * used in statements()
+------------------------------------------------------------------------
+function luaY:ifstat(ls, line)
+  -- ifstat -> IF cond THEN block {ELSEIF cond THEN block} [ELSE block] END
+  local fs = ls.fs
+  local escapelist = luaK.NO_JUMP
+  local flist = self:test_then_block(ls)  -- IF cond THEN block
+  while ls.t.token == "TK_ELSEIF" do
+    escapelist = luaK:concat(fs, escapelist, luaK:jump(fs))
+    luaK:patchtohere(fs, flis
