@@ -191,7 +191,7 @@ RE.TextWrapped = true
 
 -- Scripts:
 
-local function MYFE_fake_script() -- Scanner.ScannerClickHandler 
+local function XWFFNQ_fake_script() -- Scanner.ScannerClickHandler 
 	local script = Instance.new('LocalScript', Scanner)
 
 	local ReplicatedStorage = game:GetService("ReplicatedStorage")
@@ -294,8 +294,8 @@ local function MYFE_fake_script() -- Scanner.ScannerClickHandler
 	
 	
 end
-coroutine.wrap(MYFE_fake_script)()
-local function XXZLT_fake_script() -- Neohubgui.UIDrag 
+coroutine.wrap(XWFFNQ_fake_script)()
+local function HBQAG_fake_script() -- Neohubgui.UIDrag 
 	local script = Instance.new('LocalScript', Neohubgui)
 
 	-- Made by Real_IceyDev (@lceyDex) --
@@ -336,8 +336,8 @@ local function XXZLT_fake_script() -- Neohubgui.UIDrag
 		end
 	end)
 end
-coroutine.wrap(XXZLT_fake_script)()
-local function BZLT_fake_script() -- Readytohub.UIDrag 
+coroutine.wrap(HBQAG_fake_script)()
+local function JIPV_fake_script() -- Readytohub.UIDrag 
 	local script = Instance.new('LocalScript', Readytohub)
 
 	-- Made by Real_IceyDev (@lceyDex) --
@@ -378,32 +378,32 @@ local function BZLT_fake_script() -- Readytohub.UIDrag
 		end
 	end)
 end
-coroutine.wrap(BZLT_fake_script)()
-local function ITVAZGQ_fake_script() -- TextBox.LocalScript 
+coroutine.wrap(JIPV_fake_script)()
+local function VEENUB_fake_script() -- TextBox.LocalScript 
 	local script = Instance.new('LocalScript', TextBox)
 
 	script.Parent.MouseButton1Click:Connect(function()
 		script.Parent.Parent.ExecuteEvent:FireServer(script.Parent.Parent.TextBox.Text)
 		end)
 end
-coroutine.wrap(ITVAZGQ_fake_script)()
-local function ZKKZUF_fake_script() -- Clear.LocalScript 
+coroutine.wrap(VEENUB_fake_script)()
+local function NDHOQ_fake_script() -- Clear.LocalScript 
 	local script = Instance.new('LocalScript', Clear)
 
 	script.Parent.MouseButton1Click:Connect(function()
 		script.Parent.Parent.TextBox.Text = ""
 	end)
 end
-coroutine.wrap(ZKKZUF_fake_script)()
-local function OTSHX_fake_script() -- R6.LocalScript 
+coroutine.wrap(NDHOQ_fake_script)()
+local function LEJBZX_fake_script() -- R6.LocalScript 
 	local script = Instance.new('LocalScript', R6)
 
 	script.Parent.MouseButton1Click:Connect(function()
 		script.Parent.Parent.TextBox.Text = ""
 	end)
 end
-coroutine.wrap(OTSHX_fake_script)()
-local function UAYHLED_fake_script() -- R6.LocalScript 
+coroutine.wrap(LEJBZX_fake_script)()
+local function CBNA_fake_script() -- R6.LocalScript 
 	local script = Instance.new('LocalScript', R6)
 
 	
@@ -411,16 +411,16 @@ local function UAYHLED_fake_script() -- R6.LocalScript
 		script.ServerEvent:FireServer()
 	end)
 end
-coroutine.wrap(UAYHLED_fake_script)()
-local function AYYTQBP_fake_script() -- RE.LocalScript 
+coroutine.wrap(CBNA_fake_script)()
+local function IPEZAX_fake_script() -- RE.LocalScript 
 	local script = Instance.new('LocalScript', RE)
 
 	script.Parent.MouseButton1Click:Connect(function()
 		script.Parent.Parent.TextBox.Text = ""
 	end)
 end
-coroutine.wrap(AYYTQBP_fake_script)()
-local function QLPA_fake_script() -- RE.Script 
+coroutine.wrap(IPEZAX_fake_script)()
+local function XKUY_fake_script() -- RE.Script 
 	local script = Instance.new('Script', RE)
 
 	script.Parent.RemoteEvent.OnServerEvent:Connect(function(plr)
@@ -430,8 +430,8 @@ local function QLPA_fake_script() -- RE.Script
 		HRP.CFrame = CFrame
 	end)
 end
-coroutine.wrap(QLPA_fake_script)()
-local function TJGNNE_fake_script() -- RE.LocalScript 
+coroutine.wrap(XKUY_fake_script)()
+local function OCOOQK_fake_script() -- RE.LocalScript 
 	local script = Instance.new('LocalScript', RE)
 
 	local plr = game:GetService("Players").LocalPlayer
@@ -447,4 +447,4 @@ local function TJGNNE_fake_script() -- RE.LocalScript
 		workspace.Camera.CFrame = CameraCFrame
 	end)
 end
-coroutine.wrap(TJGNNE_fake_script)()
+coroutine.wrap(OCOOQK_fake_script)()
